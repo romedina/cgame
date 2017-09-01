@@ -17,11 +17,28 @@ function draw()
 
 	mouse = createVector(mouseX,mouseY);//Create mouse vector
 
+	//cgameArena.js
 	drawArena();
+	//cgameOutside.js
 	drawOutside();
+	//cgameFigs.js
 	drawFigs();
 
-	verValidPos_A();
+	//cgameInter.js
+	listenCollision();
+
+	//colisionEntrePols();
+
+	//placeFig();
+
+	/*
+	console.log(
+			"hitA: " + hitarea_A +"\n" +
+			"hitB: " + hitarea_B +"\n"  + 
+			"hitC: " + hitarea_C +"\n"  +
+			"hitO: " + hitarea_O 
+		);
+	*/
 	
 }
 
